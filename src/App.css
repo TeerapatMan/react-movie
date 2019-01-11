@@ -1,5 +1,13 @@
 @import '~antd/dist/antd.css';
 
+.buttonDeteil {
+  color: #ff756e;
+}
+
+.link-deteil {
+  color: red;
+}
+
 .cardiner {
   width: 350;
   text-align: center;

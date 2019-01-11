@@ -11,11 +11,19 @@ import rootReducer from './reducers'
 
 import thunk from 'redux-thunk'
 
+import { BrowserRouter } from 'react-router-dom'
+
+import FecthComponent from './fetchComponent.js'
+
 const store = createStore(rootReducer , applyMiddleware(thunk)) //การเอาค่ามาจากที่ไหน
 
 const MyApp = () => (
   <Provider store={store}>
-    <App />
+    <FecthComponent>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </FecthComponent>
   </Provider>
 )
 
